@@ -17,7 +17,7 @@ double line_search(
     {
         res = res / 2;
         move = z - res * dz;
-        proj_z(move)
+        proj_z(move);
     }
     return res;
   /////////////////////////////////////////////////////////////////////////////

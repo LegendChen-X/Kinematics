@@ -35,7 +35,7 @@ void end_effectors_objective_and_gradient(
             for(int j=0;j<3;++j)
             {
                 int index = 3*i+j;
-                double dx = 2 * (tip_trans(index)-xb0(index));
+                double dx = 2 * (tips(index)-xb0(index));
                 gradient += jacobian.row(index).transpose() * dx;
             }
         }
